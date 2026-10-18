@@ -1,0 +1,50 @@
+{
+  "cleaning": {
+    "rows_raw": 2930,
+    "outliers_removed": 5,
+    "lot_frontage_imputed": 490,
+    "rows_clean": 2925,
+    "missing_after": 0
+  },
+  "features": 272,
+  "skewed_log_transformed": 31,
+  "best_alpha": 237.13737056616552,
+  "cv": {
+    "Baseline: living area only": {
+      "rmse_log_mean": 0.27923296469505277,
+      "rmse_log_std": 0.006077070319002366
+    },
+    "OLS, normal equation (scratch)": {
+      "rmse_log_mean": 0.139172257836287,
+      "rmse_log_std": 0.03357269632065911
+    },
+    "Ridge closed form, alpha=237 (scratch)": {
+      "rmse_log_mean": 0.11399573059340436,
+      "rmse_log_std": 0.014624816576233265
+    },
+    "Ridge, gradient descent (scratch)": {
+      "rmse_log_mean": 0.11399578808005636,
+      "rmse_log_std": 0.014624788506846285
+    },
+    "scikit-learn LinearRegression": {
+      "rmse_log_mean": 0.12232343132715287,
+      "rmse_log_std": 0.017987757007802776
+    },
+    "scikit-learn Ridge, alpha=237": {
+      "rmse_log_mean": 0.11399573059340296,
+      "rmse_log_std": 0.014624816576233093
+    },
+    "scikit-learn Lasso, alpha=0.0005": {
+      "rmse_log_mean": 0.11354036209708725,
+      "rmse_log_std": 0.01592771219487594
+    }
+  },
+  "holdout": {
+    "rmse_log": 0.12902748155850693,
+    "r2_log": 0.9068833388104538,
+    "mae_usd": 12966.917317440093,
+    "mape_pct": 8.49377314295352,
+    "median_ape_pct": 5.273295332530115,
+    "gd_vs_closed_form_max_coef_diff": 5.659070674898098e-06
+  }
+}
