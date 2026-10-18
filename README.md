@@ -13,10 +13,11 @@ Each project lives in its own folder with its code, data, charts, interactive da
 | # | Project | Algorithm built from scratch | Key result |
 |---|---|---|---|
 | 01 | [House Price Prediction](01-house-price-prediction) | OLS (normal equation), Ridge (closed form and gradient descent) | 5.3% median error on 2,925 home sales; matches scikit-learn |
+| 02 | [Iris Flower Classification](02-iris-classification) | k-NN, stratified k-fold, confusion matrix and F1 | 95.9% CV accuracy; 100% agreement with scikit-learn |
 
 ## Roadmap
 
-Iris classification, MNIST digit recognition, movie review sentiment, customer churn, decision tree, PCA, Markov chain text generator, neural network and linear regression from zero.
+MNIST digit recognition, movie review sentiment, customer churn, decision tree, PCA, Markov chain text generator, neural network and linear regression from zero.
 
 ## How to run
 

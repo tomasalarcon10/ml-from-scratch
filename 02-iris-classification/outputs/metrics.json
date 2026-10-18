@@ -1,0 +1,100 @@
+{
+  "best_k": 15,
+  "best_depth": 3,
+  "knn_vs_sklearn_prediction_agreement": 1.0,
+  "cv_accuracy": {
+    "Majority class baseline": {
+      "mean": 0.33333333333333326,
+      "std": 5.551115123125783e-17
+    },
+    "k-NN, k=1 (scratch)": {
+      "mean": 0.9453333333333335,
+      "std": 0.03512517299285197
+    },
+    "k-NN, k=15 (scratch)": {
+      "mean": 0.9586666666666668,
+      "std": 0.03166491223210111
+    },
+    "scikit-learn k-NN, k=15": {
+      "mean": 0.9586666666666668,
+      "std": 0.03166491223210111
+    },
+    "k-NN on petals only, k=15": {
+      "mean": 0.9606666666666668,
+      "std": 0.03379020239326449
+    },
+    "Decision tree, depth 2": {
+      "mean": 0.936,
+      "std": 0.037617962612442345
+    },
+    "Decision tree, depth 3": {
+      "mean": 0.9433333333333335,
+      "std": 0.04176654695380556
+    },
+    "Decision tree, unlimited": {
+      "mean": 0.9466666666666669,
+      "std": 0.03651483716701107
+    }
+  },
+  "out_of_fold": {
+    "knn": {
+      "accuracy": 0.96,
+      "macro_f1": 0.96,
+      "recall_by_species": {
+        "setosa": 1.0,
+        "versicolor": 0.94,
+        "virginica": 0.94
+      },
+      "confusion": [
+        [
+          50,
+          0,
+          0
+        ],
+        [
+          0,
+          47,
+          3
+        ],
+        [
+          0,
+          3,
+          47
+        ]
+      ]
+    },
+    "tree_depth3": {
+      "accuracy": 0.9466666666666667,
+      "macro_f1": 0.9466666666666667,
+      "recall_by_species": {
+        "setosa": 1.0,
+        "versicolor": 0.92,
+        "virginica": 0.92
+      },
+      "confusion": [
+        [
+          50,
+          0,
+          0
+        ],
+        [
+          0,
+          46,
+          4
+        ],
+        [
+          0,
+          4,
+          46
+        ]
+      ]
+    }
+  },
+  "tree_feature_importance": {
+    "sepal_length": 0.0,
+    "sepal_width": 0.0,
+    "petal_length": 0.054,
+    "petal_width": 0.946
+  },
+  "tree_rules": "|--- petal_width <= 0.80\n|   |--- class: setosa\n|--- petal_width >  0.80\n|   |--- petal_width <= 1.75\n|   |   |--- petal_length <= 4.95\n|   |   |   |--- class: versicolor\n|   |   |--- petal_length >  4.95\n|   |   |   |--- class: virginica\n|   |--- petal_width >  1.75\n|   |   |--- petal_length <= 4.85\n|   |   |   |--- class: virginica\n|   |   |--- petal_length >  4.85\n|   |   |   |--- class: virginica\n"
+}
