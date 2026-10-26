@@ -1,0 +1,429 @@
+{
+  "data": {
+    "reviews": 50000,
+    "duplicates_removed": 418,
+    "train": 34582,
+    "validation": 5000,
+    "test": 10000,
+    "features": 50000,
+    "vectorize_seconds": 22.0
+  },
+  "gradient_check_worst_relative_error": 3.3589424005623844e-07,
+  "selected_lambda": 3e-07,
+  "regularization_curve": [
+    {
+      "lambda": 0,
+      "val_accuracy": 0.9108,
+      "val_log_loss": 0.2302322253293125
+    },
+    {
+      "lambda": 1e-07,
+      "val_accuracy": 0.9108,
+      "val_log_loss": 0.23045148739654078
+    },
+    {
+      "lambda": 3e-07,
+      "val_accuracy": 0.9112,
+      "val_log_loss": 0.2309026188282107
+    },
+    {
+      "lambda": 1e-06,
+      "val_accuracy": 0.9106,
+      "val_log_loss": 0.23258457225048856
+    },
+    {
+      "lambda": 3e-06,
+      "val_accuracy": 0.9094,
+      "val_log_loss": 0.2377959371723709
+    },
+    {
+      "lambda": 1e-05,
+      "val_accuracy": 0.909,
+      "val_log_loss": 0.2550693418744937
+    },
+    {
+      "lambda": 3e-05,
+      "val_accuracy": 0.9016,
+      "val_log_loss": 0.2907672916508298
+    },
+    {
+      "lambda": 0.0001,
+      "val_accuracy": 0.8892,
+      "val_log_loss": 0.3612846350881082
+    },
+    {
+      "lambda": 0.0003,
+      "val_accuracy": 0.8776,
+      "val_log_loss": 0.45398024204399134
+    }
+  ],
+  "train_seconds": 1.6,
+  "test": {
+    "baseline_majority": 0.5,
+    "scratch_unigrams": {
+      "accuracy": 0.8983,
+      "precision": 0.8862,
+      "recall": 0.9092,
+      "f1": 0.8976,
+      "roc_auc": 0.9637,
+      "log_loss": 0.2531,
+      "confusion": {
+        "tn": 4527,
+        "fp": 572,
+        "fn": 445,
+        "tp": 4456
+      }
+    },
+    "scratch_unigrams_bigrams": {
+      "accuracy": 0.9097,
+      "precision": 0.898,
+      "recall": 0.9202,
+      "f1": 0.909,
+      "roc_auc": 0.9707,
+      "log_loss": 0.2301,
+      "confusion": {
+        "tn": 4587,
+        "fp": 512,
+        "fn": 391,
+        "tp": 4510
+      }
+    },
+    "sklearn_unigrams_bigrams": {
+      "accuracy": 0.9031,
+      "precision": 0.8905,
+      "recall": 0.9147,
+      "f1": 0.9025,
+      "roc_auc": 0.9674,
+      "log_loss": 0.2326,
+      "confusion": {
+        "tn": 4548,
+        "fp": 551,
+        "fn": 418,
+        "tp": 4483
+      }
+    }
+  },
+  "sklearn_check": {
+    "selected_C": 10,
+    "vocabulary_overlap": 0.9897,
+    "prediction_agreement": 0.9682
+  },
+  "accuracy_by_length": [
+    {
+      "from": 11,
+      "to": 119,
+      "accuracy": 0.913835548990645,
+      "n": 2031
+    },
+    {
+      "from": 119,
+      "to": 152,
+      "accuracy": 0.9134709931170109,
+      "n": 2034
+    },
+    {
+      "from": 152,
+      "to": 206,
+      "accuracy": 0.9094911937377691,
+      "n": 2044
+    },
+    {
+      "from": 206,
+      "to": 323,
+      "accuracy": 0.8969428007889546,
+      "n": 2028
+    },
+    {
+      "from": 323,
+      "to": 2278,
+      "accuracy": 0.9173718267794922,
+      "n": 2009
+    }
+  ],
+  "top_positive": [
+    [
+      "excellent",
+      5.258884193769085
+    ],
+    [
+      "brilliant",
+      4.829340312743683
+    ],
+    [
+      "hilarious",
+      4.788921227169367
+    ],
+    [
+      "great",
+      4.706593927689736
+    ],
+    [
+      "perfect",
+      4.693622895232601
+    ],
+    [
+      "loved",
+      4.6599044073124976
+    ],
+    [
+      "enjoyable",
+      4.6236625844004395
+    ],
+    [
+      "superb",
+      4.412052814851563
+    ],
+    [
+      "wonderful",
+      4.410779601929882
+    ],
+    [
+      "amazing",
+      4.410388402153245
+    ],
+    [
+      "refreshing",
+      4.387998543340585
+    ],
+    [
+      "fantastic",
+      4.27722750527885
+    ],
+    [
+      "best",
+      4.251630654228862
+    ],
+    [
+      "must see",
+      4.234125128985793
+    ],
+    [
+      "well worth",
+      4.231198659906757
+    ],
+    [
+      "awesome",
+      4.219397231151835
+    ],
+    [
+      "funniest",
+      4.183584952994438
+    ],
+    [
+      "favorite",
+      4.167652197648316
+    ],
+    [
+      "today",
+      4.160749100679766
+    ],
+    [
+      "gem",
+      4.098474308390979
+    ],
+    [
+      "wonderfully",
+      4.091694423707435
+    ],
+    [
+      "fun",
+      4.086657013088408
+    ],
+    [
+      "perfectly",
+      4.044939532444334
+    ],
+    [
+      "highly recommend",
+      4.0411981822334235
+    ],
+    [
+      "underrated",
+      4.0133932066242215
+    ]
+  ],
+  "top_negative": [
+    [
+      "worst",
+      -5.347839441598535
+    ],
+    [
+      "boring",
+      -5.261562912989198
+    ],
+    [
+      "dull",
+      -5.097616645056601
+    ],
+    [
+      "awful",
+      -5.083675423012655
+    ],
+    [
+      "fails",
+      -5.0766167518092065
+    ],
+    [
+      "not funny",
+      -4.9425580483176645
+    ],
+    [
+      "poor",
+      -4.82423495449232
+    ],
+    [
+      "disappointing",
+      -4.792246094150909
+    ],
+    [
+      "not worth",
+      -4.756150381476741
+    ],
+    [
+      "disappointment",
+      -4.737219410716261
+    ],
+    [
+      "terrible",
+      -4.659909792000097
+    ],
+    [
+      "poorly",
+      -4.630980561360509
+    ],
+    [
+      "bad",
+      -4.612393724292231
+    ],
+    [
+      "waste",
+      -4.598931988027177
+    ],
+    [
+      "not recommend",
+      -4.593503498271995
+    ],
+    [
+      "save",
+      -4.519111484781188
+    ],
+    [
+      "unfortunately",
+      -4.4938443722423855
+    ],
+    [
+      "waste time",
+      -4.388606282194775
+    ],
+    [
+      "worse",
+      -4.376224065233918
+    ],
+    [
+      "horrible",
+      -4.364684163884443
+    ],
+    [
+      "unfunny",
+      -4.353106677591533
+    ],
+    [
+      "worst movies",
+      -4.323595860135394
+    ],
+    [
+      "annoying",
+      -4.303482616110354
+    ],
+    [
+      "miscast",
+      -4.242926022609605
+    ],
+    [
+      "supposed",
+      -4.229905570764793
+    ]
+  ],
+  "most_confident_mistakes": [
+    {
+      "true": "negative",
+      "p_positive": 0.995,
+      "text": "Mickey Rourke hunts Diane Lane in Elmore Leonard's Killshot It is not like Mickey Rourke ever really disappeared. He has had a steady string of appearances before he burst back on the scene. He was memorable in: Domino, Sin City, Man on Fire, Once Upon a Time in Mexico, and Get Carter. But in his powerful dramatic performance in The Wrestler (2008), we see a full blown presentation of the characte"
+    },
+    {
+      "true": "positive",
+      "p_positive": 0.006,
+      "text": "This movie has everything that makes a bad movie worth watching - sloppy editing, little to no continuity, insane dialog, bad (you might even say non-existent) acting, pointless story lines, shots that go on FAR too long...and it's perfect for MST3K-style riffing, not to mention the \"Corpse Eaters Drinking Game\": Scribble on forms...take a shot - Sign your name...take a shot - Catch a bad Foley ed"
+    },
+    {
+      "true": "negative",
+      "p_positive": 0.989,
+      "text": "Just caught \"The Rain People\" on Turner Classic Movies late one night. The film was released in 1969. Shirley Knight stars as Natalie, a Long Island housewife who -- exact reasons unknown -- leaves her husband and embarks on a road trip, not knowing exactly where she is going. Natalie is also newly pregnant, which complicates things. Along the way, she picks up a brain-damaged ex-football player \""
+    },
+    {
+      "true": "positive",
+      "p_positive": 0.014,
+      "text": "The Japanese have probably the most sadistic movies around the world,and this is one of the strongest examples.With a running time at about an hour,it contains enough sexual violence and gore to disgust every single sane person on earth(even those who are hunting this type of movies).Three men and a woman are making a porn film.After some normally shots(which are pixelated),the girl is tied up,and"
+    },
+    {
+      "true": "negative",
+      "p_positive": 0.984,
+      "text": "Voor een verloren soldaat , for a lost soldier, is a sad example of how not to translate to film a touching, complex psychological study, of that most magical time in a man's life, when he is still a child, but starting to become a man. The novel records the real life experiences of Rudy van Dantzig, as told thru the boy Jeroen, during the waning days of WWII at age 11 as he deals with his incipie"
+    },
+    {
+      "true": "positive",
+      "p_positive": 0.017,
+      "text": "Was this based on a comic-book? A video-game? A drawing by a 3 year-old?   There is nothing in this movie to be taken seriously at all; not the characters, not the dialog, not the plot, not the action. Nothing. We have high-tech international terrorists/criminals who bicker like pre-school kids, Stallone's man-of-steel-type resilience towards ice-cold weather, dialog so dumb that it's sometimes al"
+    }
+  ],
+  "history": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "train_loss": [
+      0.3852843938122528,
+      0.28414513701987737,
+      0.23084853379725792,
+      0.19650459054404776,
+      0.17183066035178404,
+      0.15301285557889846,
+      0.13799821714171742,
+      0.12578444282648377,
+      0.11551384508644454,
+      0.10684882366304738
+    ],
+    "val_loss": [
+      0.4173963332562686,
+      0.3346230346427647,
+      0.2953008368226192,
+      0.272900374805912,
+      0.25843461543270924,
+      0.24861223096825702,
+      0.24174251215258136,
+      0.23694303192063107,
+      0.23347423887209992,
+      0.2309026188282107
+    ],
+    "val_acc": [
+      0.885,
+      0.8972,
+      0.903,
+      0.9084,
+      0.9088,
+      0.9104,
+      0.9102,
+      0.9094,
+      0.9118,
+      0.9112
+    ]
+  }
+}
