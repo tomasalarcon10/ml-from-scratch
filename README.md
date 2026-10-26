@@ -16,10 +16,11 @@ Each project lives in its own folder with its code, data, charts, interactive da
 | 02 | [Iris Flower Classification](02-iris-classification) | k-NN, stratified k-fold, confusion matrix and F1 | 95.9% CV accuracy; 100% agreement with scikit-learn |
 | 03 | [MNIST Digit Recognition](03-mnist-digit-recognition) | Dense and convolutional layers, backpropagation, Adam | 98.82% test accuracy with a CNN built in NumPy |
 | 04 | [Movie Review Sentiment](04-movie-review-sentiment) | Text preprocessing, TF-IDF, logistic regression with Adam | 90.97% accuracy on 10,000 IMDB reviews; live demo in the browser |
+| 05 | [Customer Churn Prediction](05-customer-churn-prediction) | SMOTE, stratified split, profit curve, permutation importance (with LightGBM) | AUC 0.863; profit-based threshold earns 47% more than the default |
 
 ## Roadmap
 
-Customer churn, decision tree, PCA, Markov chain text generator, neural network and linear regression from zero.
+Decision tree, PCA, Markov chain text generator, neural network and linear regression from zero.
 
 ## How to run
 

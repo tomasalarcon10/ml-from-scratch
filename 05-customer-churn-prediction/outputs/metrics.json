@@ -1,0 +1,245 @@
+{
+  "data": {
+    "customers": 10000,
+    "churn_rate": 0.2037,
+    "train": 6000,
+    "validation": 2000,
+    "test": 2000,
+    "smote_training_rows": 9556
+  },
+  "models": {
+    "Logistic regression (balanced)": {
+      "val_roc_auc": 0.7729,
+      "test_roc_auc": 0.7662,
+      "test_average_precision": 0.44,
+      "trees": null,
+      "val_optimal_threshold": 0.42,
+      "val_profit": 50500.0,
+      "test_profit": 48149.999999999985,
+      "mean_predicted_churn_test": 0.4315,
+      "at_threshold_0_5": {
+        "threshold": 0.5,
+        "tp": 273,
+        "fp": 462,
+        "fn": 134,
+        "tn": 1131,
+        "precision": 0.3714,
+        "recall": 0.6708,
+        "f1": 0.4781,
+        "accuracy": 0.702
+      }
+    },
+    "LightGBM, no rebalancing": {
+      "val_roc_auc": 0.8651,
+      "test_roc_auc": 0.8633,
+      "test_average_precision": 0.693,
+      "trees": 166,
+      "val_optimal_threshold": 0.13,
+      "val_profit": 62650.0,
+      "test_profit": 60750.0,
+      "mean_predicted_churn_test": 0.1961,
+      "at_threshold_0_5": {
+        "threshold": 0.5,
+        "tp": 177,
+        "fp": 56,
+        "fn": 230,
+        "tn": 1537,
+        "precision": 0.7597,
+        "recall": 0.4349,
+        "f1": 0.5531,
+        "accuracy": 0.857
+      }
+    },
+    "LightGBM + class weights": {
+      "val_roc_auc": 0.8599,
+      "test_roc_auc": 0.8553,
+      "test_average_precision": 0.6754,
+      "trees": 43,
+      "val_optimal_threshold": 0.4,
+      "val_profit": 62900.0,
+      "test_profit": 60100.0,
+      "mean_predicted_churn_test": 0.3329,
+      "at_threshold_0_5": {
+        "threshold": 0.5,
+        "tp": 239,
+        "fp": 161,
+        "fn": 168,
+        "tn": 1432,
+        "precision": 0.5975,
+        "recall": 0.5872,
+        "f1": 0.5923,
+        "accuracy": 0.8355
+      }
+    },
+    "LightGBM + random oversampling": {
+      "val_roc_auc": 0.8641,
+      "test_roc_auc": 0.8588,
+      "test_average_precision": 0.6867,
+      "trees": 102,
+      "val_optimal_threshold": 0.48,
+      "val_profit": 63200.0,
+      "test_profit": 59700.0,
+      "mean_predicted_churn_test": 0.3751,
+      "at_threshold_0_5": {
+        "threshold": 0.5,
+        "tp": 291,
+        "fp": 280,
+        "fn": 116,
+        "tn": 1313,
+        "precision": 0.5096,
+        "recall": 0.715,
+        "f1": 0.5951,
+        "accuracy": 0.802
+      }
+    },
+    "LightGBM + SMOTE (from scratch)": {
+      "val_roc_auc": 0.8653,
+      "test_roc_auc": 0.8571,
+      "test_average_precision": 0.6755,
+      "trees": 100,
+      "val_optimal_threshold": 0.45,
+      "val_profit": 63700.0,
+      "test_profit": 59149.999999999985,
+      "mean_predicted_churn_test": 0.3495,
+      "at_threshold_0_5": {
+        "threshold": 0.5,
+        "tp": 267,
+        "fp": 196,
+        "fn": 140,
+        "tn": 1397,
+        "precision": 0.5767,
+        "recall": 0.656,
+        "f1": 0.6138,
+        "accuracy": 0.832
+      }
+    }
+  },
+  "selected_model": "LightGBM, no rebalancing",
+  "selection_rule": "highest validation profit within 2%, then best calibrated",
+  "contenders": [
+    "LightGBM, no rebalancing",
+    "LightGBM + class weights",
+    "LightGBM + random oversampling",
+    "LightGBM + SMOTE (from scratch)"
+  ],
+  "business": {
+    "assumptions": {
+      "value_saved_usd": 1000,
+      "contact_cost_usd": 50,
+      "success_rate": 0.3
+    },
+    "break_even_probability": 0.1667,
+    "profit_optimal_threshold": 0.13,
+    "test_at_optimal": {
+      "threshold": 0.13,
+      "tp": 340,
+      "fp": 485,
+      "fn": 67,
+      "tn": 1108,
+      "precision": 0.4121,
+      "recall": 0.8354,
+      "f1": 0.5519,
+      "accuracy": 0.724
+    },
+    "test_at_0_5": {
+      "threshold": 0.5,
+      "tp": 177,
+      "fp": 56,
+      "fn": 230,
+      "tn": 1537,
+      "precision": 0.7597,
+      "recall": 0.4349,
+      "f1": 0.5531,
+      "accuracy": 0.857
+    },
+    "test_profit_optimal": 60750.0,
+    "test_profit_at_0_5": 41450.0,
+    "test_profit_contact_everyone": 22100.0,
+    "test_profit_random_same_size": 9116.2,
+    "top_20pct_captures": 0.6143
+  },
+  "importance": {
+    "CreditScore": {
+      "mean_abs_shap": 0.0617,
+      "permutation_auc_drop": 0.0015,
+      "gain_share": 0.0349
+    },
+    "Germany": {
+      "mean_abs_shap": 0.1741,
+      "permutation_auc_drop": 0.026,
+      "gain_share": 0.0447
+    },
+    "Spain": {
+      "mean_abs_shap": 0.013,
+      "permutation_auc_drop": 0.0008,
+      "gain_share": 0.0037
+    },
+    "Male": {
+      "mean_abs_shap": 0.1934,
+      "permutation_auc_drop": 0.0064,
+      "gain_share": 0.0185
+    },
+    "Age": {
+      "mean_abs_shap": 0.7191,
+      "permutation_auc_drop": 0.1113,
+      "gain_share": 0.3517
+    },
+    "Tenure": {
+      "mean_abs_shap": 0.0284,
+      "permutation_auc_drop": -0.0004,
+      "gain_share": 0.0138
+    },
+    "Balance": {
+      "mean_abs_shap": 0.1274,
+      "permutation_auc_drop": 0.0179,
+      "gain_share": 0.0983
+    },
+    "NumOfProducts": {
+      "mean_abs_shap": 0.7027,
+      "permutation_auc_drop": 0.1244,
+      "gain_share": 0.2595
+    },
+    "HasCrCard": {
+      "mean_abs_shap": 0.0113,
+      "permutation_auc_drop": -0.0,
+      "gain_share": 0.0022
+    },
+    "IsActiveMember": {
+      "mean_abs_shap": 0.3798,
+      "permutation_auc_drop": 0.0323,
+      "gain_share": 0.0953
+    },
+    "EstimatedSalary": {
+      "mean_abs_shap": 0.0379,
+      "permutation_auc_drop": 0.001,
+      "gain_share": 0.0241
+    },
+    "ZeroBalance": {
+      "mean_abs_shap": 0.0026,
+      "permutation_auc_drop": 0.0,
+      "gain_share": 0.0005
+    },
+    "BalanceToSalary": {
+      "mean_abs_shap": 0.1066,
+      "permutation_auc_drop": 0.0108,
+      "gain_share": 0.0529
+    }
+  },
+  "segments": {
+    "churn_by_products": {
+      "1": 0.2771,
+      "2": 0.0758,
+      "3": 0.8271,
+      "4": 1.0
+    },
+    "churn_by_country": {
+      "France": 0.1615,
+      "Germany": 0.3244,
+      "Spain": 0.1667
+    },
+    "churn_by_active": {
+      "0": 0.2685,
+      "1": 0.1427
+    }
+  }
+}
