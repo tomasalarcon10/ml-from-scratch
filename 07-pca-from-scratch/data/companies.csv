@@ -1,0 +1,57 @@
+ticker,name,sector,country
+TOT,Total,Energy,France
+XOM,Exxon Mobil,Energy,United States
+CVX,Chevron,Energy,United States
+COP,ConocoPhillips,Energy,United States
+VLO,Valero Energy,Energy,United States
+MSFT,Microsoft,Technology & media,United States
+IBM,IBM,Technology & media,United States
+TWX,Time Warner,Technology & media,United States
+CMCSA,Comcast,Technology & media,United States
+CVC,Cablevision,Technology & media,United States
+YHOO,Yahoo,Technology & media,United States
+DELL,Dell,Technology & media,United States
+HPQ,HP,Technology & media,United States
+AMZN,Amazon,Consumer discretionary,United States
+TM,Toyota,Autos,Japan
+CAJ,Canon,Technology & media,Japan
+SNE,Sony,Technology & media,Japan
+F,Ford,Autos,United States
+HMC,Honda,Autos,Japan
+NAV,Navistar,Industrials,United States
+NOC,Northrop Grumman,Industrials,United States
+BA,Boeing,Industrials,United States
+KO,Coca-Cola,Consumer staples,United States
+MMM,3M,Industrials,United States
+MCD,McDonald's,Consumer discretionary,United States
+PEP,PepsiCo,Consumer staples,United States
+K,Kellogg,Consumer staples,United States
+UN,Unilever,Consumer staples,Netherlands
+MAR,Marriott,Consumer discretionary,United States
+PG,Procter & Gamble,Consumer staples,United States
+CL,Colgate-Palmolive,Consumer staples,United States
+GE,General Electric,Industrials,United States
+WFC,Wells Fargo,Financials,United States
+JPM,JPMorgan Chase,Financials,United States
+AIG,AIG,Financials,United States
+AXP,American Express,Financials,United States
+BAC,Bank of America,Financials,United States
+GS,Goldman Sachs,Financials,United States
+AAPL,Apple,Technology & media,United States
+SAP,SAP,Technology & media,Germany
+CSCO,Cisco,Technology & media,United States
+TXN,Texas Instruments,Technology & media,United States
+XRX,Xerox,Technology & media,United States
+WMT,Walmart,Consumer staples,United States
+HD,Home Depot,Consumer discretionary,United States
+GSK,GlaxoSmithKline,Healthcare,United Kingdom
+PFE,Pfizer,Healthcare,United States
+SNY,Sanofi,Healthcare,France
+NVS,Novartis,Healthcare,Switzerland
+KMB,Kimberly-Clark,Consumer staples,United States
+R,Ryder,Industrials,United States
+GD,General Dynamics,Industrials,United States
+RTN,Raytheon,Industrials,United States
+CVS,CVS,Consumer staples,United States
+CAT,Caterpillar,Industrials,United States
+DD,DuPont,Industrials,United States

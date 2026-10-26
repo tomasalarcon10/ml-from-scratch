@@ -1,0 +1,436 @@
+{
+  "data": {
+    "stocks": 56,
+    "daily_returns": 1257,
+    "start": "2003-01-03",
+    "end": "2007-12-31",
+    "splits_adjusted": [
+      {
+        "ticker": "COP",
+        "date": "2005-06-02",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "CVX",
+        "date": "2004-09-13",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "TOT",
+        "date": "2006-05-23",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "VLO",
+        "date": "2004-10-08",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "VLO",
+        "date": "2005-12-16",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2005-02-28",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "CAJ",
+        "date": "2006-08-25",
+        "ratio": "3-for-2"
+      },
+      {
+        "ticker": "CMCSA",
+        "date": "2007-02-22",
+        "ratio": "3-for-2"
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2003-02-18",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "YHOO",
+        "date": "2004-05-12",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "BAC",
+        "date": "2004-08-30",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "WFC",
+        "date": "2006-08-14",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "CVS",
+        "date": "2005-06-07",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "PG",
+        "date": "2004-06-21",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "UN",
+        "date": "2006-05-25",
+        "ratio": "3-for-1"
+      },
+      {
+        "ticker": "MAR",
+        "date": "2006-06-12",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "CAT",
+        "date": "2005-07-14",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "GD",
+        "date": "2006-03-27",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "MMM",
+        "date": "2003-09-30",
+        "ratio": "2-for-1"
+      },
+      {
+        "ticker": "NOC",
+        "date": "2004-06-22",
+        "ratio": "2-for-1"
+      }
+    ],
+    "winsorized_returns": 224,
+    "sector_counts": {
+      "Energy": 5,
+      "Technology & media": 15,
+      "Financials": 6,
+      "Healthcare": 4,
+      "Consumer staples": 9,
+      "Consumer discretionary": 4,
+      "Industrials": 10,
+      "Autos": 3
+    }
+  },
+  "checks": {
+    "correlation_matrix_vs_numpy_corrcoef": 3.6637359812630166e-15,
+    "jacobi_eigenvalues_vs_numpy_eigh": 1.4566126083082054e-13,
+    "jacobi_eigenvectors_vs_numpy_eigh": 2.4386936914311264e-11,
+    "explained_variance_vs_sklearn": 1.942890293094024e-16,
+    "power_iteration_top3_vs_jacobi": 2.1667112548584555e-12,
+    "power_iteration_steps": [
+      7,
+      46,
+      61
+    ],
+    "jacobi_sweeps": 8,
+    "reconstruction_all_components_error": 7.460698725481052e-14
+  },
+  "eigenvalues": [
+    18.1281,
+    2.7821,
+    2.0909,
+    1.6895,
+    1.5236,
+    1.336,
+    1.2941,
+    1.141,
+    1.1034,
+    0.9335,
+    0.8962,
+    0.8609,
+    0.8299,
+    0.8243,
+    0.8079,
+    0.758,
+    0.7335,
+    0.7126,
+    0.6874,
+    0.6749,
+    0.6559,
+    0.6467,
+    0.6335,
+    0.6196,
+    0.601,
+    0.5977,
+    0.5843,
+    0.5806,
+    0.5631,
+    0.5439,
+    0.5379,
+    0.5247,
+    0.5196,
+    0.5085,
+    0.501,
+    0.491,
+    0.4666,
+    0.456,
+    0.4524,
+    0.4391,
+    0.4371,
+    0.4294,
+    0.4237,
+    0.4104,
+    0.4008,
+    0.3819,
+    0.3688,
+    0.3538,
+    0.3428,
+    0.3289,
+    0.2973,
+    0.2559,
+    0.2512,
+    0.2286,
+    0.201,
+    0.1577
+  ],
+  "explained_variance_ratio": [
+    0.3237,
+    0.0497,
+    0.0373,
+    0.0302,
+    0.0272,
+    0.0239,
+    0.0231,
+    0.0204,
+    0.0197,
+    0.0167,
+    0.016,
+    0.0154,
+    0.0148,
+    0.0147,
+    0.0144,
+    0.0135,
+    0.0131,
+    0.0127,
+    0.0123,
+    0.0121,
+    0.0117,
+    0.0115,
+    0.0113,
+    0.0111,
+    0.0107,
+    0.0107,
+    0.0104,
+    0.0104,
+    0.0101,
+    0.0097,
+    0.0096,
+    0.0094,
+    0.0093,
+    0.0091,
+    0.0089,
+    0.0088,
+    0.0083,
+    0.0081,
+    0.0081,
+    0.0078,
+    0.0078,
+    0.0077,
+    0.0076,
+    0.0073,
+    0.0072,
+    0.0068,
+    0.0066,
+    0.0063,
+    0.0061,
+    0.0059,
+    0.0053,
+    0.0046,
+    0.0045,
+    0.0041,
+    0.0036,
+    0.0028
+  ],
+  "cumulative_variance": {
+    "1": 0.3237,
+    "3": 0.4107,
+    "5": 0.4681,
+    "10": 0.5718
+  },
+  "marchenko_pastur": {
+    "q": 0.0446,
+    "noise_variance": 0.6763,
+    "lambda_plus": 0.9919,
+    "components_above": 9
+  },
+  "pc1_correlation_with_equal_weight_market": 0.995,
+  "pc1_loading_range": [
+    0.32,
+    0.78
+  ],
+  "extreme_loadings": {
+    "PC1": {
+      "positive": [
+        "JPM",
+        "GS",
+        "AXP",
+        "GE",
+        "BAC"
+      ],
+      "negative": [
+        "VLO",
+        "CVC",
+        "CL",
+        "NVS",
+        "COP"
+      ]
+    },
+    "PC2": {
+      "positive": [
+        "COP",
+        "VLO",
+        "CVX",
+        "XOM",
+        "TOT"
+      ],
+      "negative": [
+        "CSCO",
+        "WMT",
+        "IBM",
+        "HPQ",
+        "TWX"
+      ]
+    },
+    "PC3": {
+      "positive": [
+        "PG",
+        "PEP",
+        "CL",
+        "K",
+        "KO"
+      ],
+      "negative": [
+        "TXN",
+        "TM",
+        "CSCO",
+        "YHOO",
+        "SNE"
+      ]
+    },
+    "PC4": {
+      "positive": [
+        "NOC",
+        "RTN",
+        "GD",
+        "BA",
+        "CVS"
+      ],
+      "negative": [
+        "NVS",
+        "SNY",
+        "GSK",
+        "PFE",
+        "UN"
+      ]
+    },
+    "PC5": {
+      "positive": [
+        "HMC",
+        "TM",
+        "CAJ",
+        "SNE",
+        "NOC"
+      ],
+      "negative": [
+        "CMCSA",
+        "VLO",
+        "AAPL",
+        "YHOO",
+        "XOM"
+      ]
+    }
+  },
+  "sector_mean_loadings": {
+    "Energy": [
+      0.505,
+      0.676,
+      -0.012,
+      0.022,
+      -0.122
+    ],
+    "Technology & media": [
+      0.548,
+      -0.102,
+      -0.209,
+      -0.01,
+      -0.053
+    ],
+    "Financials": [
+      0.726,
+      -0.073,
+      0.14,
+      -0.023,
+      -0.077
+    ],
+    "Healthcare": [
+      0.495,
+      0.034,
+      0.118,
+      -0.354,
+      0.151
+    ],
+    "Consumer staples": [
+      0.522,
+      -0.065,
+      0.252,
+      -0.026,
+      0.023
+    ],
+    "Consumer discretionary": [
+      0.551,
+      -0.105,
+      -0.032,
+      -0.006,
+      -0.094
+    ],
+    "Industrials": [
+      0.587,
+      -0.009,
+      0.024,
+      0.206,
+      0.067
+    ],
+    "Autos": [
+      0.537,
+      0.025,
+      -0.24,
+      -0.073,
+      0.329
+    ]
+  },
+  "rolling_pc1_share": {
+    "min": 0.1813,
+    "max": 0.4508,
+    "max_date": "2007-11-28"
+  },
+  "correlation_reconstruction_rms": [
+    0.3177,
+    0.0623,
+    0.0482,
+    0.0421,
+    0.0391,
+    0.0356,
+    0.0335,
+    0.0315,
+    0.0309,
+    0.0302,
+    0.0307,
+    0.0312,
+    0.0315,
+    0.0317,
+    0.0319,
+    0.0318,
+    0.0316,
+    0.0313,
+    0.0311,
+    0.0309,
+    0.0306
+  ]
+}
