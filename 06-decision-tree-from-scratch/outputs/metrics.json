@@ -1,0 +1,209 @@
+{
+  "data": {
+    "penguins": 342,
+    "species_counts": {
+      "Adelie": 151,
+      "Chinstrap": 68,
+      "Gentoo": 123
+    },
+    "train": 256,
+    "test": 86,
+    "features": [
+      "bill_length_mm",
+      "bill_depth_mm",
+      "flipper_length_mm",
+      "body_mass_g"
+    ]
+  },
+  "sklearn_checks": {
+    "gini": {
+      "prediction_agreement_test": 1.0,
+      "same_depth_and_leaves": true,
+      "same_root_split": true,
+      "pruning_alphas_max_abs_diff": 1.1102230246251565e-16
+    },
+    "entropy": {
+      "prediction_agreement_test": 1.0,
+      "same_depth_and_leaves": true,
+      "same_root_split": true,
+      "pruning_alphas_max_abs_diff": 1.1102230246251565e-16
+    }
+  },
+  "root_question": {
+    "feature": "flipper_length_mm",
+    "threshold": 206.0,
+    "gini_gain": 0.3470479329427084,
+    "best_threshold_per_feature_gini": {
+      "bill_length_mm": {
+        "threshold": 42.349999999999994,
+        "gain": 0.3104042977435025
+      },
+      "bill_depth_mm": {
+        "threshold": 16.45,
+        "gain": 0.27807374470812907
+      },
+      "flipper_length_mm": {
+        "threshold": 206.0,
+        "gain": 0.3470479329427084
+      },
+      "body_mass_g": {
+        "threshold": 4525.0,
+        "gain": 0.25174438560546203
+      }
+    }
+  },
+  "cv_accuracy_by_depth": {
+    "gini": {
+      "1": {
+        "mean": 0.7981,
+        "std": 0.0082
+      },
+      "2": {
+        "mean": 0.9532,
+        "std": 0.0238
+      },
+      "3": {
+        "mean": 0.9562,
+        "std": 0.0218
+      },
+      "4": {
+        "mean": 0.9668,
+        "std": 0.0214
+      },
+      "5": {
+        "mean": 0.9668,
+        "std": 0.0217
+      },
+      "6": {
+        "mean": 0.9672,
+        "std": 0.0221
+      },
+      "None": {
+        "mean": 0.9672,
+        "std": 0.0221
+      }
+    },
+    "entropy": {
+      "1": {
+        "mean": 0.7981,
+        "std": 0.0082
+      },
+      "2": {
+        "mean": 0.9536,
+        "std": 0.0247
+      },
+      "3": {
+        "mean": 0.9617,
+        "std": 0.0227
+      },
+      "4": {
+        "mean": 0.9734,
+        "std": 0.0191
+      },
+      "5": {
+        "mean": 0.9711,
+        "std": 0.0187
+      },
+      "6": {
+        "mean": 0.9711,
+        "std": 0.0187
+      },
+      "None": {
+        "mean": 0.9711,
+        "std": 0.0187
+      }
+    }
+  },
+  "pruning": {
+    "alphas": [
+      0.0,
+      0.00387,
+      0.00625,
+      0.00753,
+      0.01111,
+      0.01772,
+      0.02995,
+      0.20145,
+      0.34705
+    ],
+    "leaves": [
+      11,
+      9,
+      8,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "cv_accuracy": [
+      0.9672,
+      0.9672,
+      0.9656,
+      0.9652,
+      0.9554,
+      0.953,
+      0.9375,
+      0.8786,
+      0.6395
+    ],
+    "selected_alpha": 0.0075326284421213625,
+    "rule": "one standard error"
+  },
+  "models": {
+    "Full tree (Gini)": {
+      "test_accuracy": 0.9418604651162791,
+      "train_accuracy": 1.0,
+      "leaves": 11,
+      "depth": 5
+    },
+    "Full tree (entropy)": {
+      "test_accuracy": 0.9302325581395349,
+      "train_accuracy": 1.0,
+      "leaves": 9,
+      "depth": 5
+    },
+    "Depth 1 (one question)": {
+      "test_accuracy": 0.7674418604651163,
+      "train_accuracy": 0.80078125,
+      "leaves": 2,
+      "depth": 1
+    },
+    "Depth 2": {
+      "test_accuracy": 0.9302325581395349,
+      "train_accuracy": 0.96875,
+      "leaves": 4,
+      "depth": 2
+    },
+    "Pruned tree (alpha 0.008)": {
+      "test_accuracy": 0.9302325581395349,
+      "train_accuracy": 0.984375,
+      "leaves": 6,
+      "depth": 4
+    }
+  },
+  "final_confusion_matrix": [
+    [
+      34,
+      3,
+      1
+    ],
+    [
+      1,
+      16,
+      0
+    ],
+    [
+      0,
+      1,
+      30
+    ]
+  ],
+  "final_feature_importance": {
+    "bill_length_mm": 0.35,
+    "bill_depth_mm": 0.0493,
+    "flipper_length_mm": 0.5715,
+    "body_mass_g": 0.0292
+  }
+}
