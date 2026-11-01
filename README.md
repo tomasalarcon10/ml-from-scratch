@@ -21,10 +21,11 @@ Each project lives in its own folder with its code, data, charts, interactive da
 | 07 | [PCA from Scratch](07-pca-from-scratch) | Covariance, Jacobi eigen-decomposition, power iteration, Marchenko-Pastur | The market explains 32% of 56 stocks; 9 components beat noise |
 | 08 | [Markov Chain Text Generator](08-markov-chain-text-generator) | Transition matrix, stationary distribution, mixing, interpolated n-gram model with EM | 2.69 bits per character on unseen Shakespeare; live generator in the browser |
 | 09 | [Neural Network from Scratch](09-neural-network-from-scratch) | Forward pass and backpropagation by hand, momentum, gradient check | 100% on intertwined spirals vs 51% linear; 95.6% on Iris; live training playground |
+| 10 | [Linear Regression from Scratch](10-linear-regression-from-scratch) | Normal equation with Gaussian elimination, batch / mini-batch / stochastic gradient descent, inference | Both reach the same line to 3e-12; exact learning-rate limit 0.588 predicted and confirmed |
 
-## Roadmap
+## Status
 
-Linear regression from zero.
+Complete: ten projects, from a line through points to a convolutional network, each one built by hand and checked against a reference implementation.
 
 ## How to run
 

@@ -1,0 +1,108 @@
+{
+  "data": {
+    "homes": 2923,
+    "removed": "5 homes above 4,000 sq ft (De Cock, 2011)",
+    "x": "living area, thousand sq ft",
+    "y": "sale price, thousand USD"
+  },
+  "coefficients": {
+    "normal_equation": [
+      6.799709312086763,
+      116.23066976206326
+    ],
+    "cov_var_formula": [
+      6.79970931208382,
+      116.23066976206503
+    ],
+    "numpy_lstsq": [
+      6.799709312083935,
+      116.23066976206499
+    ],
+    "sklearn": [
+      6.799709312083905,
+      116.23066976206496
+    ],
+    "gradient_descent": [
+      6.799709312084085,
+      116.23066976206519
+    ],
+    "stochastic_gd": [
+      7.314578156904355,
+      117.03731910295564
+    ]
+  },
+  "max_difference_vs_normal_equation": {
+    "cov_var": 2.942535104466515e-12,
+    "lstsq": 2.8279600883251987e-12,
+    "sklearn": 2.857269976175303e-12,
+    "gradient_descent": 2.6778579353958776e-12,
+    "stochastic_gd": 0.8066493408923776
+  },
+  "gradient_descent_steps_to_converge": 823,
+  "hessian": {
+    "eigenvalues": [
+      0.06954302682195068,
+      3.3990819146765086
+    ],
+    "condition_number": 48.87739389571143,
+    "lr_limit": 0.5883941753108178,
+    "lr_optimal": 0.5765973645844777,
+    "condition_raw_sqft": 25780736.68877102,
+    "condition_standardized": 1.0000000000000007,
+    "standardized_steps_at_lr_1": 2
+  },
+  "learning_rate_runs_final_gap": {
+    "0.01": 61.771945293029376,
+    "0.1": 0.4053962973180205,
+    "0.5": 5.434230843093246e-11,
+    "0.58": 1.5571890799037647e-06,
+    "0.6": 1029952353463.1263
+  },
+  "steps_to_tolerance": {
+    "0.01": 31736,
+    "0.1": 3165,
+    "0.3": 1049,
+    "0.5766": 651,
+    "0.58": 920
+  },
+  "inference": {
+    "intercept": [
+      6.799709312086763,
+      3.261753969399787,
+      0.40413891393767276,
+      13.195279710235852
+    ],
+    "slope": [
+      116.23066976206326,
+      2.075982285412644,
+      112.16013256758866,
+      120.30120695653785
+    ],
+    "slope_t": 55.98827628674107,
+    "r2": 0.5176435042533181,
+    "residual_sd_k_usd": 54.56895800209563,
+    "corr_fitted_vs_squared_residual": 0.3881664304159671,
+    "residual_kurtosis_excess": 3.6979932310929904
+  },
+  "multiple_regression": {
+    "features": [
+      "living_area_sqft",
+      "overall_quality",
+      "year_built",
+      "garage_cars",
+      "basement_sqft"
+    ],
+    "r2": 0.8203383394445303,
+    "adj_r2": 0.8200303832214321,
+    "coef_per_sd": {
+      "intercept": 180.456,
+      "living_area_sqft": 27.581,
+      "overall_quality": 27.068,
+      "year_built": 9.731,
+      "garage_cars": 8.051,
+      "basement_sqft": 18.288
+    },
+    "gd_vs_normal_max_diff": 1.4935608305677306e-11,
+    "sklearn_vs_normal_max_diff": 4.689582056016661e-13
+  }
+}
