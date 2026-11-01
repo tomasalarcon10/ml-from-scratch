@@ -1,0 +1,329 @@
+{
+  "data": {
+    "characters": 1115394,
+    "word_tokens_train": 247050,
+    "split": "85% train / 5% validation / 10% test, contiguous"
+  },
+  "letter_chain": {
+    "states": 27,
+    "lambda2_modulus": 0.2765,
+    "entropy_rate_bits": 3.3177,
+    "independent_letters_entropy_bits": 4.0867,
+    "power_iteration_steps": 27,
+    "stationary_power_vs_eigenvector_max_diff": 1.1102230246251565e-16,
+    "stationary_vs_letter_frequency_max_diff": 1.1123641158218567e-06,
+    "p_u_after_q": 1.0,
+    "steps_to_tv_below_1pct_from_q": 5,
+    "stationary": {
+      "space": 0.19657,
+      "a": 0.05884,
+      "b": 0.01332,
+      "c": 0.01845,
+      "d": 0.03187,
+      "e": 0.09569,
+      "f": 0.01684,
+      "g": 0.01507,
+      "h": 0.05152,
+      "i": 0.05359,
+      "j": 0.00096,
+      "k": 0.00816,
+      "l": 0.03536,
+      "m": 0.02356,
+      "n": 0.0505,
+      "o": 0.06695,
+      "p": 0.01153,
+      "q": 0.00085,
+      "r": 0.05085,
+      "s": 0.05117,
+      "t": 0.06976,
+      "u": 0.02835,
+      "v": 0.00818,
+      "w": 0.01993,
+      "x": 0.00064,
+      "y": 0.02098,
+      "z": 0.00052
+    }
+  },
+  "characters": {
+    "orders": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "test_bits_per_char": [
+      4.8115,
+      3.6073,
+      3.0713,
+      2.8074,
+      2.7039,
+      2.69,
+      2.6907,
+      2.6906,
+      2.6905,
+      2.6905,
+      2.6905
+    ],
+    "train_bits_per_char": [
+      4.775,
+      3.5359,
+      2.7407,
+      2.1441,
+      1.7468,
+      1.4085,
+      1.0859,
+      0.7922,
+      0.5422,
+      0.358,
+      0.2329
+    ],
+    "contexts": [
+      1,
+      65,
+      1370,
+      11036,
+      47316,
+      129245,
+      255001,
+      396506,
+      534119,
+      651268,
+      740244
+    ],
+    "test_context_coverage": [
+      1.0,
+      1.0,
+      0.9976,
+      0.9692,
+      0.9176,
+      0.847,
+      0.7371,
+      0.6012,
+      0.4601,
+      0.327,
+      0.2205
+    ],
+    "interpolation_weights_order10": [
+      0.005,
+      0.06,
+      0.116,
+      0.259,
+      0.354,
+      0.179,
+      0.027,
+      0.001,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "words": {
+    "orders": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "test_perplexity": [
+      459.34,
+      267.79,
+      261.1,
+      261.13,
+      261.07
+    ],
+    "interpolation_weights": [
+      [
+        1.0
+      ],
+      [
+        0.436,
+        0.564
+      ],
+      [
+        0.433,
+        0.474,
+        0.093
+      ],
+      [
+        0.433,
+        0.473,
+        0.093,
+        0.0
+      ],
+      [
+        0.433,
+        0.474,
+        0.093,
+        0.0,
+        0.0
+      ]
+    ],
+    "copy_rate_6grams": {
+      "1": 0.0047,
+      "2": 0.1748,
+      "3": 0.6551,
+      "4": 0.9486
+    }
+  },
+  "next_word_examples": {
+    "my lord": [
+      [
+        ",",
+        0.4258
+      ],
+      [
+        ".",
+        0.201
+      ],
+      [
+        ";",
+        0.1244
+      ],
+      [
+        "?",
+        0.067
+      ],
+      [
+        ":",
+        0.0526
+      ],
+      [
+        "!",
+        0.0335
+      ],
+      [
+        "\n",
+        0.0191
+      ],
+      [
+        "chamberlain",
+        0.0096
+      ]
+    ],
+    "I will": [
+      [
+        "not",
+        0.1586
+      ],
+      [
+        "be",
+        0.0617
+      ],
+      [
+        "go",
+        0.0308
+      ],
+      [
+        "tell",
+        0.0264
+      ],
+      [
+        ",",
+        0.0264
+      ],
+      [
+        "make",
+        0.022
+      ],
+      [
+        "\n",
+        0.0132
+      ],
+      [
+        ".",
+        0.0132
+      ]
+    ],
+    "the king": [
+      [
+        ",",
+        0.1707
+      ],
+      [
+        ".",
+        0.1301
+      ],
+      [
+        "\n",
+        0.065
+      ],
+      [
+        ";",
+        0.065
+      ],
+      [
+        "and",
+        0.0407
+      ],
+      [
+        "is",
+        0.0407
+      ],
+      [
+        ":",
+        0.0325
+      ],
+      [
+        "!",
+        0.0325
+      ]
+    ],
+    "to be": [
+      [
+        "a",
+        0.0611
+      ],
+      [
+        "\n",
+        0.0444
+      ],
+      [
+        "so",
+        0.0389
+      ],
+      [
+        "the",
+        0.0333
+      ],
+      [
+        "your",
+        0.0278
+      ],
+      [
+        "found",
+        0.0278
+      ],
+      [
+        "his",
+        0.0222
+      ],
+      [
+        ",",
+        0.0167
+      ]
+    ]
+  },
+  "samples": {
+    "characters": {
+      "1": "\nTES:\nForsfe ttyis ithevesie\nThor t m mes l m then, buchyoupave Ma k l se cosbofommyow.\nYo ksak; beencand thel t Col\nES:\nThthindest arenonaleese, ch h t, mors tendins thierarwioushenot cit imo had u fan, foreeapu ye buis, ay\nWhy ghall her we, s\n\nRDit\ncil gmeree",
+      "3": "O:\nTo more wrong'd\nAnd, I'll tong. Come! them to be use lock a born your dealt's now:\nAnd he wherounto love me made threed,\nHe lives?\n\nMENENIUS:\nMore better's a purse,\nAnd the Duke let vaily fare my be race it so;\nFor fair nows by with you.\n\nSAMPSON:\nTrant drun t",
+      "5": "MEO:\n'Tis moths. Come, nor dead art with one a deliver:\nI am sure, in war.\n\nLEONTES:\nYou slain text.\n\nJULIET:\nThink to\nfront, as I know not too much\nTo this beastly, sir.\n\nANGELO:\nPray no more wonder. But in this put thee be gone.\n3 KING RICHARD:\nBootless shamed me",
+      "8": "\nROMEO:\n'Tis not possible thing! more danger seen in the vault,\nAnd look'd upon.\nCome, make him worse:\nThe plebeians: I will\ntake the market-place;\nChide me with a team of love;\nFor Venus smiles on the day o'ercast.\nThis deed is done. When yet he was his worst well? v",
+      "12": "First Citizen:\nWe have ever your good will\nmust have that thanks from Rome, after the measure of his eyesight lost:\nShow me a mistress that is past.\n\nVOLUMNIA:\nTake my prayers with you.\nI would they were an-hungry; sigh'd forth proverbs,\nThat hunger broke stone walls, tha"
+    },
+    "words": {
+      "1": "\n\nWho all the hair there, he attain his thought, let me, so long shall proceed\nClaudio, where against him as they see Queen Margaret,\n\nROMEO:\nFurther than for a\nLet me. Come on my purpose, display'd.\n\n\nFull half through the matter?\nLittle are\nTell me, that spoils he",
+      "2": ":\nI may turn the dregs of it. So, to speak,\nAnd nothing come in\nWere damnable.\n\nQUEEN MARGARET:\nRichard of York,\nWrit in remembrance more than\nHe that depends\nUpon so soft a subject, makes my number more. Pray you, go with us.\n\nSICINIUS:\nVery sooth, to",
+      "3": "ROMEO:\nWhy, my young cousin, it is ten times strange.\n\nBRUTUS:\nYou never spoke what did become you less\nThan this is all: - - Well, we were sent for to the Capitol; where, as they dare. I will to Ireland to his majesty.\n\nThird Citizen:\nWe wait upon your lordship.\n",
+      "4": "\nROMEO:\nWhy, that was he.\n\nGLOUCESTER:\nBid me farewell, and smile. I pray you, tell my lord and father.\nGive me some breath, some little pause, my lord\n\nKING EDWARD IV:\nWhy,\nAs all comforts are; most good, most good indeed.\nLord Angelo, having affairs to heaven"
+    }
+  }
+}
