@@ -1,0 +1,80 @@
+{
+  "gradient_check": {
+    "tanh_network": 2.607775420622197e-08,
+    "relu_network": 6.045755058932588e-08
+  },
+  "spirals": {
+    "points": 600,
+    "train": 450,
+    "test": 150,
+    "architecture": [
+      2,
+      24,
+      3,
+      3
+    ],
+    "parameters": 159,
+    "epochs": 4000,
+    "learning_rate": 0.3,
+    "momentum": 0.9,
+    "l2": 0.0001,
+    "test_accuracy_network": 1.0,
+    "test_accuracy_linear": 0.5066666666666667,
+    "final_train_loss": 0.019559228285572345,
+    "final_test_loss": 0.018480294277372352
+  },
+  "learning_rate_sweep_final_loss": {
+    "0.003": 0.5204809973012722,
+    "0.03": 0.04316104158028491,
+    "0.3": 0.020389314056103523,
+    "3.0": 6.5842558550790375
+  },
+  "deep_network_8x16": {
+    "sigmoid": {
+      "gradient_norm_layer1": 0.000394182663673179,
+      "gradient_norm_last_hidden": 0.044440110556670236,
+      "final_train_loss": 1.1034796185758797,
+      "test_accuracy": 0.3333333333333333
+    },
+    "tanh": {
+      "gradient_norm_layer1": 0.04600688087367557,
+      "gradient_norm_last_hidden": 0.1610169923749338,
+      "final_train_loss": 0.009078522002037246,
+      "test_accuracy": 1.0
+    },
+    "relu": {
+      "gradient_norm_layer1": 0.015149130040854494,
+      "gradient_norm_last_hidden": 0.05005870394559042,
+      "final_train_loss": 0.012425452122888524,
+      "test_accuracy": 1.0
+    }
+  },
+  "iris": {
+    "architecture": [
+      4,
+      8,
+      3
+    ],
+    "test_accuracy": 0.9555555555555556,
+    "sklearn_mlp_test_accuracy": 0.9333333333333333,
+    "prediction_agreement": 0.9777777777777777,
+    "confusion_matrix": [
+      [
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        1
+      ],
+      [
+        0,
+        1,
+        14
+      ]
+    ],
+    "test_size": 45
+  }
+}
